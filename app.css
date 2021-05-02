@@ -1,0 +1,26 @@
+* {
+	-fx-font-size: 16;
+}
+
+Label {
+	-fx-pref-width: 100;
+	-fx-pref-height: 50;
+}
+
+TextField, PasswordField {
+	-fx-pref-width: 200;
+	-fx-pref-height: 50;
+}
+
+Button {
+	-fx-pref-width: 150;
+	-fx-pref-height: 50;
+}
+.title {
+	-fx-pref-width: 300;
+
+}
+
+.Label {
+	-fx-pref-width: 300;
+}

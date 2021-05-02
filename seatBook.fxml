@@ -1,0 +1,96 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+	fx:controller="Practice.seatBook" spacing="30" alignment="center" >
+<stylesheets>
+		<URL value="@seatBook.css" />
+	</stylesheets >
+	
+	<Button text="Screen" styleClass="wall" />
+		<GridPane  Hgap="10" Vgap="20" >
+			<Label text="A" GridPane.columnIndex="0" GridPane.rowIndex="0"  />
+			<Button text="1" GridPane.columnIndex="1" GridPane.rowIndex="0" 
+			onAction="#bookFill" fx:id="seat1" styleClass="button" />
+			<Button text="2" GridPane.columnIndex="2" GridPane.rowIndex="0"
+			onAction="#bookFill" fx:id="seat2" styleClass="button" />
+			<Button text="3" GridPane.columnIndex="3" GridPane.rowIndex="0"
+			onAction="#bookFill" fx:id="seat3" styleClass="button" />
+			<Button text="4" GridPane.columnIndex="4" GridPane.rowIndex="0"
+			onAction="#bookFill" fx:id="seat4" styleClass="button" />
+			<Button text="5" GridPane.columnIndex="5" GridPane.rowIndex="0"
+			onAction="#bookFill" fx:id="seat5" styleClass="button" />
+			<Button text="6" GridPane.columnIndex="6" GridPane.rowIndex="0"
+			onAction="#bookFill" fx:id="seat6" styleClass="button" />
+			<Button text="7" GridPane.columnIndex="7" GridPane.rowIndex="0"
+			onAction="#bookFill" fx:id="seat7" styleClass="button" />
+			<Button text="8" GridPane.columnIndex="8" GridPane.rowIndex="0"
+			onAction="#bookFill" fx:id="seat8" styleClass="button" />
+			<Label text="A" GridPane.columnIndex="9" GridPane.rowIndex="0"/>
+			
+			<Label text="B" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+			<Button text="1" GridPane.columnIndex="1" GridPane.rowIndex="1"
+			onAction="#bookFill" fx:id="seat9" styleClass="button" />
+			<Button text="2" GridPane.columnIndex="2" GridPane.rowIndex="1"
+			onAction="#bookFill" fx:id="seat10" styleClass="button" />
+			<Button text="3" GridPane.columnIndex="3" GridPane.rowIndex="1"
+			onAction="#bookFill" fx:id="seat11" styleClass="button" />
+			<Button text="4" GridPane.columnIndex="4" GridPane.rowIndex="1"
+			onAction="#bookFill" fx:id="seat12" styleClass="button" />
+			<Button text="5" GridPane.columnIndex="5" GridPane.rowIndex="1"
+			onAction="#bookFill" fx:id="seat13" styleClass="button" />
+			<Button text="6" GridPane.columnIndex="6" GridPane.rowIndex="1"
+			onAction="#bookFill" fx:id="seat14" styleClass="button" />
+			<Button text="7" GridPane.columnIndex="7" GridPane.rowIndex="1"
+			onAction="#bookFill" fx:id="seat15" styleClass="button" />
+			<Button text="8" GridPane.columnIndex="8" GridPane.rowIndex="1"
+			onAction="#bookFill" fx:id="seat16" styleClass="button" />
+			<Label text="B" GridPane.columnIndex="9" GridPane.rowIndex="1"/>
+			
+			<Label text="C" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+			<Button text="1" GridPane.columnIndex="1" GridPane.rowIndex="2"
+			onAction="#bookFill" fx:id="seat17" styleClass="button" />
+			<Button text="2" GridPane.columnIndex="2" GridPane.rowIndex="2"
+			onAction="#bookFill" fx:id="seat18" styleClass="button" />
+			<Button text="3" GridPane.columnIndex="3" GridPane.rowIndex="2"
+			onAction="#bookFill" fx:id="seat19" styleClass="button" />
+			<Button text="4" GridPane.columnIndex="4" GridPane.rowIndex="2"
+			onAction="#bookFill" fx:id="seat20" styleClass="button" />
+			<Button text="5" GridPane.columnIndex="5" GridPane.rowIndex="2"
+			onAction="#bookFill" fx:id="seat21" styleClass="button" />
+			<Button text="6" GridPane.columnIndex="6" GridPane.rowIndex="2"
+			onAction="#bookFill" fx:id="seat22" styleClass="button" />
+			<Button text="7" GridPane.columnIndex="7" GridPane.rowIndex="2"
+			onAction="#bookFill" fx:id="seat23" styleClass="button" />
+			<Button text="8" GridPane.columnIndex="8" GridPane.rowIndex="2"
+			onAction="#bookFill" fx:id="seat24" styleClass="button" />
+			<Label text="C" GridPane.columnIndex="9" GridPane.rowIndex="2"/>
+			
+			<Label text="D" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+			<Button text="1" GridPane.columnIndex="1" GridPane.rowIndex="3"
+			onAction="#bookFill" fx:id="seat25" styleClass="button" />
+			<Button text="2" GridPane.columnIndex="2" GridPane.rowIndex="3"
+			onAction="#bookFill" fx:id="seat26" styleClass="button" />
+			<Button text="3" GridPane.columnIndex="3" GridPane.rowIndex="3"
+			onAction="#bookFill" fx:id="seat27" styleClass="button" />
+			<Button text="4" GridPane.columnIndex="4" GridPane.rowIndex="3"
+			onAction="#bookFill" fx:id="seat28" styleClass="button" />
+			<Button text="5" GridPane.columnIndex="5" GridPane.rowIndex="3"
+			onAction="#bookFill" fx:id="seat29" styleClass="button" />
+			<Button text="6" GridPane.columnIndex="6" GridPane.rowIndex="3"
+			onAction="#bookFill" fx:id="seat30" styleClass="button" />
+			<Button text="7" GridPane.columnIndex="7" GridPane.rowIndex="3"
+			onAction="#bookFill" fx:id="seat31" styleClass="button" />
+			<Button text="8" GridPane.columnIndex="8" GridPane.rowIndex="3"
+			onAction="#bookFill" fx:id="seat32" styleClass="button" />
+			<Label text="D" GridPane.columnIndex="9" GridPane.rowIndex="3"/>
+		</GridPane>
+		
+		<HBox spacing="10" alignment = "TOP_RIGHT" >
+		<Button text="Reset" onAction="#resetSeat" />
+		<Button text="Cancel" onAction="#cancelPage" />
+		<Button text="Confirm" onAction="#setSeat" />
+		</HBox>
+		
+</VBox>

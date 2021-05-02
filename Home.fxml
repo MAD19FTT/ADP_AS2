@@ -1,0 +1,94 @@
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane  xmlns:fx="http://javafx.com/fxml"
+	fx:controller="Practice.Home" fx:id="scroll" pannable="true" 
+	hmax="150.0" hmin="50.0" vmax="1.5" vmin="0.0">
+
+<FlowPane  orientation="HORIZONTAL" 
+	alignment="center" hgap="50" vgap="50" prefWrapLength="300" >
+	
+
+
+		<ImageView
+          fx:id="image1"
+          fitHeight="150.0"
+          fitWidth="150.0"
+          preserveRatio="true"
+          onMouseClicked="#redirect"
+        />
+            
+        <ImageView
+        	fx:id="image2"
+        	fitHeight="150.0"
+            fitWidth="150.0"
+            preserveRatio="true"
+        />
+ 
+  		<HBox spacing="90" >
+        	<Label text="Black Panther" />
+        	<Label text="Aladdin" />
+  		</HBox>   
+  
+        <ImageView
+        	fx:id="image3"
+        	fitHeight="150.0"
+            fitWidth="150.0"
+            preserveRatio="true"
+        />
+        
+         <ImageView
+        	fx:id="image4"
+        	fitHeight="150.0"
+            fitWidth="150.0"
+            preserveRatio="true"
+        />
+        
+        <HBox spacing="80" >
+        	<Label text="Avenger Endgame" wrapText="true" prefWidth="70.0" textAlignment="LEFT" />
+        	<Label text="1917" />
+ 		 </HBox>
+        
+        <ImageView
+        	fx:id="image5"
+        	fitHeight="150.0"
+            fitWidth="150.0"
+            preserveRatio="true"
+        />
+        
+         <ImageView
+        	fx:id="image6"
+        	fitHeight="150.0"
+            fitWidth="150.0"
+            preserveRatio="true"
+        />
+        
+        <HBox spacing="95" >
+        	<Label text="Tom and Jerry" wrapText="true" prefWidth="70.0"/>
+        	<Label text="US" />
+ 		</HBox>
+        
+         <ImageView
+        	fx:id="image7"
+        	fitHeight="150.0"
+            fitWidth="150.0"
+            preserveRatio="true"
+        />
+        
+         <ImageView
+        	fx:id="image8"
+        	fitHeight="150.0"
+            fitWidth="150.0"
+            preserveRatio="true"
+        />
+        
+		<HBox spacing="95" >
+        	<Label text="Godzilla vs Kong" wrapText="true" prefWidth="70.0"/>
+        	<Label text="Dunkirk" />
+ 		</HBox>
+	
+</FlowPane>
+</ScrollPane>

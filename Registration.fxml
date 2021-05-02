@@ -1,0 +1,57 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+
+<?import java.lang.String?>
+
+<VBox >
+	<Label styleClass = "title" text="Registration Form" />
+	<HBox>
+		<Label text = "FirstName:" />
+		<TextField fx:id="FirstNameTextField"/>
+	</HBox>
+
+	<HBox>
+		<Label text = "LastName" />
+		<TextField fx:id ="LastNameTextField" />
+	<HBox>
+
+	<HBox>
+		<fx:define>
+			<ToggleGroup fx:id="genderToggleGroup" />
+		<fx:define>
+		<Label text = "Gender: "/>
+		<RadioButton fx:id="maleRadioButton" toggleGroup="$genderToggleGroup" text="Male"
+					selected="true"/>	
+		<RadioButton fx:id="femaleRadioButton" toggleGroup="$genderToggleGroup" text="Female" />
+	</HBox>
+
+	<HBox>
+		<Label text = "PhoneNumber:" />
+		<TextField fx:id="PhoneNumberTextField"/>
+	<HBox>
+
+	<HBox>
+		<Label text = "Confirm PhoneNumber:" />
+		<TextField fx:id="confirmPhoneNumberTextField"/>
+	</HBox>
+
+	<HBox fx:id="passwordHBox">
+		<Label text = "Password:" />
+		<PasswordField fx:id="passwordPasswordField"/>
+	</HBox>
+
+	<HBox fx:id="confirmpasswordHBox">
+		<Label text = "Confirm Password:" />
+		<PasswordField fx:id="confirmpasswordPasswordField"/>
+	</HBox>
+
+	<HBox>
+		<CheckBox text = "Show Password" />
+	</HBox>
+
+	<HBox>
+		<Button text = "Register" onAction = "#Register"/>
+	</HBox>
+
+</VBox>

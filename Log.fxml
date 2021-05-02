@@ -1,0 +1,28 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+	fx:controller="Practice.Log">
+<stylesheets>
+		<URL value="@app.css" />
+	</stylesheets >
+	
+	<Label text="Cinema" styleClass="title"/>
+	<HBox>
+		<Label text="Username:" />
+		<TextField fx:id="username" />
+	</HBox>
+	
+	<HBox fx:id="passHbox" >
+		<Label text="Password:" />
+		<PasswordField fx:id="passcode" />
+		</HBox>
+	<CheckBox text="Show Password" onAction="#showPassword" />
+	
+	<Button text="Login" onAction="#Login"/>
+	<Button text="Register" />
+		<Label styleClass="title" fx:id="error" />
+	
+</VBox>

@@ -1,0 +1,31 @@
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+	fx:controller="Practice.Schedule"  >
+	
+	<ImageView
+      fx:id="image1"
+      fitHeight="250.0"
+      fitWidth="300.0"
+    />
+    
+    <Label text="Black Panther" />
+    <Label text="T'Challa, heir to the hidden " />
+    <Label text="but advanced kingdom of Wakanda, must step "/>
+    <Label text="forward to lead his people into a new future "/>
+    <Label text="and must confront a challenger from his country's past."/>
+    
+    <FlowPane hgap="10" vgap="8"> 
+    	<Button  fx:id="slot1" onAction="#redirect"/>
+    	<Button  fx:id="slot2" onAction="#redirect"/>
+    	<Button  fx:id="slot3" onAction="#redirect"/>
+    	<Button  fx:id="slot4" onAction="#redirect"/>
+    	<Button  fx:id="slot5" onAction="#redirect"/>
+    	<Button  fx:id="slot6" onAction="#redirect"/>
+    	
+    </FlowPane>
+</VBox>
