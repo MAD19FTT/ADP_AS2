@@ -29,7 +29,7 @@ public class seatBook {
 	public void bookFill(ActionEvent find) {
 //		seatFill();
 		for(int i = 0; i < 32; i++) {
-		if(find.getSource() == seats.get(i) ) {
+		if(find.getSource() == seats.get(i) && bookList.get(i) == false) {
 		seats.get(i).setStyle("-fx-background-color: #3c7fb1; "); //click again to unselect
 		bookList.set(i, true);
 			ticketCount ++;
@@ -49,9 +49,11 @@ public class seatBook {
 	
 	public void resetSeat() {
 		for(int i = 0; i < 32; i++) {
+			if(bookList.get(i) == false) {
 			seats.get(i).setStyle("-fx-background-color: white; "); //click again to unselect
 			bookList.set(i, false);
 				ticketCount = 0;
+				}
 			}
 	}
 	
@@ -63,43 +65,45 @@ public class seatBook {
 	}
 	
 	public void initialize() {
-		seats.add(seat1);
-		seats.add(seat2);
-		seats.add(seat3);
-		seats.add(seat4);
-		seats.add(seat5);
-		seats.add(seat6);
-		seats.add(seat7);
-		seats.add(seat8);
-		seats.add(seat9);
-		seats.add(seat10);
-		seats.add(seat11);
-		seats.add(seat12);
-		seats.add(seat13);
-		seats.add(seat14);
-		seats.add(seat15);
-		seats.add(seat16);
-		seats.add(seat17);
-		seats.add(seat18);
-		seats.add(seat19);
-		seats.add(seat20);
-		seats.add(seat21);
-		seats.add(seat22);
-		seats.add(seat23);
-		seats.add(seat24);
-		seats.add(seat25);
-		seats.add(seat26);
-		seats.add(seat27);
-		seats.add(seat28);
-		seats.add(seat29);
-		seats.add(seat30);
-		seats.add(seat31);
-		seats.add(seat32);
+		seats.add(seat1);		bookList.add(true);
+		seats.add(seat2);		bookList.add(false);
+		seats.add(seat3);		bookList.add(false);
+		seats.add(seat4);		bookList.add(false);
+		seats.add(seat5);		bookList.add(false);
+		seats.add(seat6);		bookList.add(false);
+		seats.add(seat7);		bookList.add(false);
+		seats.add(seat8);		bookList.add(false);
+		seats.add(seat9);		bookList.add(false);
+		seats.add(seat10);		bookList.add(false);
+		seats.add(seat11);		bookList.add(false);
+		seats.add(seat12);		bookList.add(false);
+		seats.add(seat13);		bookList.add(false);
+		seats.add(seat14);		bookList.add(false);
+		seats.add(seat15);		bookList.add(false);
+		seats.add(seat16);		bookList.add(false);
+		seats.add(seat17);		bookList.add(false);
+		seats.add(seat18);		bookList.add(false);
+		seats.add(seat19);		bookList.add(false);
+		seats.add(seat20);		bookList.add(false);
+		seats.add(seat21);		bookList.add(false);
+		seats.add(seat22);		bookList.add(false);
+		seats.add(seat23);		bookList.add(false);
+		seats.add(seat24);		bookList.add(false);
+		seats.add(seat25);		bookList.add(false);
+		seats.add(seat26);		bookList.add(false);
+		seats.add(seat27);		bookList.add(false);
+		seats.add(seat28);		bookList.add(false);
+		seats.add(seat29);		bookList.add(false);
+		seats.add(seat30);		bookList.add(false);
+		seats.add(seat31);		bookList.add(false);
+		seats.add(seat32);		bookList.add(false);
+		
 		for(int i = 0; i < 32; i++) {
-		bookList.add(false);
 			if(bookList.get(i) == true ) {
-				seats.get(i).setDisable(true);
+				//seats.get(i).setDisable(true);
+			seats.get(i).setStyle("-fx-background-color: red; ");
 			}
+			
 		}
 	}
 	
