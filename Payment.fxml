@@ -1,6 +1,39 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox>
+<VBox xmlns:fx="http://javafx.com/fxml"
+	fx:controller="Practice.Payment" spacing="20" >
+	<HBox>
 	<Label text="Username" />
+	<Label text="" />
+	</HBox>
+	<HBox  >
+	<Label text="Ticket" />
+	</HBox>
+	<Label text="Black Panther" />
+	
+	<HBox spacing="10" >
+	<Label text="Showing" />
+	<Label text="11:00" />
+	</HBox>
+	
+<HBox spacing="10" >
+	<Label text="Selected seats" />
+	<Label text="A2" />
+</HBox>	
+<HBox spacing="10" >
+	<Label text="Price" />
+	<Label text="7" />
+</HBox>	
+<HBox spacing="10" >
+	<Label text="Quantity" />
+	<Label text="1" />
+</HBox>	
+<HBox spacing="10" >
+	<Label text="Total" />
+	<Label text="14" />
+</HBox>	
+	<CheckBox text="I have read and agreed to the terms and conditions" />
+	<Button text="Purchase" />
+
 </VBox>
